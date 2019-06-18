@@ -17,6 +17,6 @@ function nowServing(arr){
 function currentLine(arr){
   var currLine = []
   return (arr.length > 0) 
-  ? `The line is currently: ${currLine.map((x,i) => `${i}. ${x}`).join(', ')}`
+  ? `The line is currently: ${ currLine.map( (x,i) => `${i}. ${x}`).join(', ') }`
   : "The line is currently empty."
 }

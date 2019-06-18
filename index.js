@@ -15,14 +15,13 @@ function nowServing(arr){
 }
 
 function currentLine(arr){
-  if(arr.length > 0){
-    var currLine = []
-    for(var i = 0; i < arr.length; i++){
+  var currLine = []
+  return (arr.length > 0) 
+  ? {
+    for(i = 0; i < arr.length; i++){
       currLine.push(`${i+1}. ${arr[i]}`)
     }
-    return `The line is currently: ${currLine.join(', ')}`
+    `The line is currently: ${currLine.join(', ')}`
   }
-  else{
-    return "The line is currently empty."
-  }
+  : return "The line is currently empty."
 }

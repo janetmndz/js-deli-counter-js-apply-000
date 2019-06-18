@@ -18,10 +18,6 @@ function currentLine(arr){
   var currLine = []
   return (arr.length > 0) 
   ? {
-    for(i = 0; i < arr.length; i++){
-      currLine.push(`${i+1}. ${arr[i]}`)
-    }
-    
     `The line is currently: ${currLine.join(', ')}`
   }
   : return "The line is currently empty."

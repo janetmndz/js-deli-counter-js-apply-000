@@ -5,13 +5,9 @@ function takeANumber(arr, name){
 }
 
 function nowServing(arr){
-  if(arr.length > 0){
-    var customer = arr.shift()
-    return `Currently serving ${customer}.`;
-  }
-  else{
-    return "There is nobody waiting to be served!"
-  }
+  return (arr.length > 0) 
+  ? `Currently serving ${arr.shift()}.`
+  : "There is nobody waiting to be served!"
 }
 
 function currentLine(arr){
